@@ -1,0 +1,30 @@
+{
+  "name": "meetup-02-react-16-npm-create-your-own-library",
+  "version": "1.0.0",
+  "description": "\"React 16 &amp; NPM : Create your own library\" meetup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/React-Delhi-NCR/meetup-02-react-16-NPM-create-your-own-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/React-Delhi-NCR/meetup-02-react-16-NPM-create-your-own-library/issues"
+  },
+  "homepage": "https://github.com/React-Delhi-NCR/meetup-02-react-16-NPM-create-your-own-library#readme",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.20.2"
+  }
+}
