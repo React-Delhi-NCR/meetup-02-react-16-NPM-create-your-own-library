@@ -49,7 +49,7 @@ class Header extends Component {
 	}
 
 	render() {
-		const { className, ...props } = this.props,
+		const { type, className, ...props } = this.props,
 			headerType = getType(type);
 		return (
 			<HeaderContext.Provider value={this.state}>
@@ -66,7 +66,8 @@ Header.defaultProps = {
 };
 
 Header.propTypes = {
-	type: PropTypes.string.isRequired
+	type: PropTypes.string.isRequired,
+	className: PropTypes.string
 };
 
 export default Header;

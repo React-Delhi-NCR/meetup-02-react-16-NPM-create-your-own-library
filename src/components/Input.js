@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const allowedValueGroupOne = ['text', 'email', 'password', 'number', 'search', 'url', 'radio', 'checkbox'];
-
-const Input = ({ type, className, ...props }) => {
-	return <input {...props} type={type} className={className} />;
-};
+const allowedValueGroupOne = ['text', 'email', 'password', 'number', 'search', 'url', 'radio', 'checkbox'],
+	Input = ({ type, className, ...props }) => {
+		return <input {...props} type={type} className={className} />;
+	};
 
 Input.defaultProps = {
 	className: ''

@@ -12,7 +12,6 @@ const getType = type => {
 			case 'error':
 				return 'error';
 		}
-		return type;
 	},
 	Badge = ({ type, rounded, className, ...props }) => {
 		const btnType = getType(type);
@@ -23,13 +22,15 @@ const getType = type => {
 		);
 	};
 
-Badge.defaultPRops = {
+Badge.defaultProps = {
 	rounded: false,
 	className: ''
 };
 
 Badge.propTypes = {
-	type: PropTypes.string.isRequired
+	type: PropTypes.string.isRequired,
+	rounded: PropTypes.bool,
+	className: PropTypes.string
 };
 
 export default Badge;

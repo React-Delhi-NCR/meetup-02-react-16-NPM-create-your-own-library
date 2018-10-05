@@ -14,4 +14,10 @@ Button.defaultProps = {
 	className: ''
 };
 
+Button.propTypes = {
+	type: PropTypes.string.isRequired,
+	line: PropTypes.bool,
+	className: PropTypes.string
+};
+
 export default Button;

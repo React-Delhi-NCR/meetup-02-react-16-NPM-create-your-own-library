@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 const CardContext = React.createContext();
-
 class Card extends Component {
 	constructor(props) {
 		super(props);
@@ -56,6 +56,10 @@ class Card extends Component {
 
 Card.defaultProps = {
 	className: ''
+};
+
+Card.propTypes = {
+	className: PropTypes.string
 };
 
 export default Card;
