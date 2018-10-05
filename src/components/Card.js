@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 const CardContext = React.createContext();
+
 class Card extends Component {
 	constructor(props) {
 		super(props);
