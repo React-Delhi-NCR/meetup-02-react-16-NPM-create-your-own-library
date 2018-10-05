@@ -6,11 +6,11 @@ const path = require('path'),
 module.exports = {
 	mode: 'development',
 	entry: {
-		index: path.join(__dirname, 'src', 'index.js')
+		index: path.join(__dirname, 'src', 'app.js')
 	},
 	output: {
 		path: path.join(__dirname, 'build'),
-		filename: '[name].min.js'
+		filename: 'bundle.min.js'
 	},
 	module: {
 		rules: [
@@ -23,8 +23,8 @@ module.exports = {
 				}
 			}
 		]
-	},
-	optimization: {
-		minimizer: [new UglifyJsPlugin()]
 	}
+	// optimization: {
+	// 	minimizer: [new UglifyJsPlugin()]
+	// }
 };
