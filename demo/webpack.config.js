@@ -1,7 +1,6 @@
 // Webpack build script
 
-const path = require('path'),
-	UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const path = require('path'), UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
@@ -21,10 +20,21 @@ module.exports = {
 				query: {
 					presets: ['es2015', 'react', 'stage-3']
 				}
+			},
+			{
+				test: /\.(png|jp(e*)g|svg)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: './assets/[name].[ext]'
+						}
+					}
+				]
 			}
 		]
+	},
+	optimization: {
+		minimizer: [new UglifyJsPlugin()]
 	}
-	// optimization: {
-	// 	minimizer: [new UglifyJsPlugin()]
-	// }
 };

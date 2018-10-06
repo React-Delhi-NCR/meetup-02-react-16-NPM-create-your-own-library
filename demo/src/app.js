@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Card, Badge, Button, Header, Input } from '../../src/index';
+import demoImage from '../assets/tech.jpg';
+import { Card, Badge, Button, Header, Input, Alert, Thumbnail, Breadcrumb } from '../../src/index';
 
 ReactDOM.render(
 	<div style={{ width: '500px', margin: '50px auto' }}>
@@ -33,6 +34,9 @@ ReactDOM.render(
 			/>
 		</Header>
 		<Input type="text" placeholder="Enter data here" className="mt-20" />
+		<Alert type="primary" className="mt-20">Primary</Alert>
+		<Thumbnail imageSrc={demoImage} title="This is the title" className="mt-20" />
+		<Breadcrumb />
 	</div>,
 	document.getElementById('root')
 );
