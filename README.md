@@ -6,7 +6,7 @@
 
 ## Building the project
 
-Run ``npm install`` to install the project's dependencies. Once done, run ``npm run start`` to build the demo app and start the server. Open ``http://localhost:9000/`` to view the demo.
+Run ``npm install`` to install the project's dependencies. Once done, run ``npm start`` to build the demo app and start the server. Open ``http://localhost:9000/`` to view the demo.
 
 ## Details
 [https://www.meetup.com/React-Delhi-NCR/events/254373998/](https://www.meetup.com/React-Delhi-NCR/events/254373998/)
