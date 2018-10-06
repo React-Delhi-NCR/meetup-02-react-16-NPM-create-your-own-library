@@ -3,7 +3,9 @@
 	"version": "1.0.0",
 	"description": "\"React 16 &amp; NPM : Create your own library\" meetup",
 	"scripts": {
-		"start": "./node_modules/.bin/webpack --progress --config ./demo/webpack.config.js && cd ./demo/ && python3 -m http.server 9000"
+		"start": "./node_modules/.bin/webpack --progress --config ./demo/webpack.config.js && cd ./demo/ && python -m http.server 9000",
+		"build": "./node_modules/.bin/webpack --progress --config ./demo/webpack.config.js",
+		"watch": "./node_modules/.bin/webpack --watch --config ./demo/webpack.config.js"
 	},
 	"main": "index.js",
 	"repository": {
