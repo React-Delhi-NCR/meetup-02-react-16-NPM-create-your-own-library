@@ -7,7 +7,7 @@
 		"build": "./node_modules/.bin/webpack --progress --config ./demo/webpack.config.js",
 		"watch": "./node_modules/.bin/webpack --watch --config ./demo/webpack.config.js"
 	},
-	"main": "index.js",
+	"main": "./src/index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/React-Delhi-NCR/meetup-02-react-16-NPM-create-your-own-library.git"
