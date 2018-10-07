@@ -1,6 +1,7 @@
 // Webpack build script
 
-const path = require('path'), UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const path = require('path'),
+	UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
@@ -9,7 +10,8 @@ module.exports = {
 	},
 	output: {
 		path: path.join(__dirname, 'build'),
-		filename: 'bundle.min.js'
+		filename: 'bundle.min.js',
+		publicPath: '/build/'
 	},
 	module: {
 		rules: [
@@ -36,5 +38,8 @@ module.exports = {
 	},
 	optimization: {
 		minimizer: [new UglifyJsPlugin()]
+	},
+	devServer: {
+		publicPath: '/build/'
 	}
 };
