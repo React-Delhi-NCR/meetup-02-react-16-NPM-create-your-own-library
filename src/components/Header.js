@@ -38,7 +38,17 @@ class Header extends Component {
 						<div className={`cm-nav ${className}`} {...props}>
 							<ul>
 								{props.nav.map((v, k) => {
-									return <li key={k}>{v.link ? <a href={`${v.link}`}>{v.label}</a> : v.label}</li>;
+									return (
+										<li key={k}>
+											{v.link ? (
+												<a target="_blank" href={`${v.link}`}>
+													{v.label}
+												</a>
+											) : (
+												v.label
+											)}
+										</li>
+									);
 								})}
 							</ul>
 						</div>
