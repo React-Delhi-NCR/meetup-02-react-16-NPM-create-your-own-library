@@ -1,6 +1,6 @@
 {
 	"name": "meetup-02-react-16-npm-create-your-own-library",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "\"React 16 &amp; NPM : Create your own library\" meetup",
 	"scripts": {
 		"start": "./node_modules/.bin/webpack --progress --config ./demo/webpack.config.js && cd ./demo/ && python -m http.server 9000",

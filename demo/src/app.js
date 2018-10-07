@@ -4,7 +4,25 @@ import demoImage from '../assets/tech.jpg';
 import { Card, Badge, Button, Header, Input, Alert, Thumbnail, Breadcrumb, Pagination } from '../../src/index';
 
 ReactDOM.render(
-	<div style={{ width: '500px', margin: '50px auto' }}>
+	<div style={{ maxWidth: '960px', margin: '0 auto 50px' }}>
+		<Header style={{ marginBottom: 50 + 'px', padding: 30 + 'px', fontSize: '1.3em' }} type="inverted" className="">
+			<Header.Logo>
+				<a href="../index.html">React CSS Mint</a>
+			</Header.Logo>
+			<Header.Navigation
+				nav={[
+					{
+						label: 'Docs',
+						link: 'http://arunmichaeldsouza.github.io/CSS-Mint/'
+					},
+					{
+						label: 'Github',
+						link: 'https://github.com/React-Delhi-NCR/meetup-02-react-16-NPM-create-your-own-library'
+					}
+				]}
+			/>
+		</Header>
+
 		{/***Card Component***/}
 		<Card className="mb-20">
 			<Card.Header>Header Content</Card.Header>
