@@ -31,7 +31,33 @@ ReactDOM.render(
 			<Card.Footer>Footer Content</Card.Footer>
 		</Card>
 
-		{/***Badge Component***/}
+		{/* Card Example 2 */}
+		{/* <Card className="mb-20">
+			<Card.Header>About React</Card.Header>
+			<Card.Body>
+				<img
+					src="http://xpgraph.com/wp-content/uploads/2017/12/reactjs.jpg"
+					alt="React JS"
+					style={{ width: '100%' }}
+				/>
+				<p style={{ marginBottom: '0' }}>
+					In computing, React (also known as React.js or ReactJS) is a JavaScript library for building user
+					interfaces. It is maintained by Facebook and a community of individual developers and companies.
+					React can be used as a base in the development of single-page or mobile applications. Complex React
+					applications usually require the use of additional libraries for state management, routing, and
+					interaction with an API.
+				</p>
+			</Card.Body>
+			<Card.Footer>
+				<a
+					href="https://reactjs.org/"
+					style={{ textDecoration: 'underline', fontWeight: 'bold', color: '#7f8c8d' }}
+				>
+					Show me more
+				</a>
+			</Card.Footer>
+		</Card> */}
+
 		<Text className="cm-text-success cm-text-bold mb-10">Badge</Text>
 		<Badge type="primary" className="mb-20">
 			Hello, Badge here
