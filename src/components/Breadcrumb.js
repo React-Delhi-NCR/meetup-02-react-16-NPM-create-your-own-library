@@ -19,9 +19,9 @@ const Breadcrumb = ({ list, activeList, className, ...props }) => {
 };
 
 Breadcrumb.defaultProps = {
-	list: ['Home', 'Products', 'Electronics', 'Headphones', 'JBL'],
+	list: [],
 	className: '',
-	activeList: ['Electronics', 'Headphones']
+	activeList: []
 };
 
 Breadcrumb.propTypes = {
